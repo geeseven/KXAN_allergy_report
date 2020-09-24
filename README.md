@@ -1,14 +1,16 @@
 KXAN Austin area allergy report in your terminal.
 
 ```
-$ ./KXAN_allergy_report 
+$ ./KXAN_allergy_report.py
   KXAN allergy report  
-from September 11, 2020
+from September 24, 2020
 ┏━━━━━━━━━━┳━━━━━━━━━━┓
 ┃ allergen ┃ severity ┃
 ┡━━━━━━━━━━╇━━━━━━━━━━┩
-│ Fall Elm │ High     │
+│ Fall Elm │ Low      │
+│ Grass    │ Low      │
 │ Mold     │ Medium   │
-│ Ragweed  │ Low      │
+│ Other    │ High     │
+│ Ragweed  │ High     │
 └──────────┴──────────┘
 ```
