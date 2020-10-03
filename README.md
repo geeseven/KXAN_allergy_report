@@ -2,7 +2,7 @@
 
 KXAN Austin area allergy report in your terminal.
 
-```bash
+```console
 $ ./KXAN_allergy_report.py
   KXAN allergy report  
 from September 24, 2020
