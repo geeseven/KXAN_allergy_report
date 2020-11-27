@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# requires requests and rich
 from re import findall
 
 from requests import get
