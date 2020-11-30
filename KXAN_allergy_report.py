@@ -2,6 +2,7 @@
 from re import findall
 
 from requests import get
+from rich import box
 from rich.console import Console
 from rich.table import Table
 
@@ -15,9 +16,14 @@ date_regex = r'<h3 class="allergy_content">(.*)</h3>'
 allergies = findall(allergy_regex, site.text)
 date = findall(date_regex, site.text)
 
-table = Table(title="KXAN allergy report from {}".format(date[0]))
-table.add_column("allergen")
-table.add_column("severity")
+table = Table(
+    border_style="dim green",
+    box=box.SIMPLE_HEAD,
+    header_style="white",
+    title="KXAN allergy report from {}".format(date[0]),
+)
+table.add_column("allergen", style="dim")
+table.add_column("severity", style="dim")
 
 for item in sorted(allergies):
     # change formatting from 'Oak - High' to ['Oak', 'High']
